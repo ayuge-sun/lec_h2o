@@ -1,7 +1,7 @@
 ###データセットの作り方をメモしておくよ
 ####1 紙の準備
-* `<lec_h2o>/dataset/sheet`内の**==hira.pdf==**をたくさん印刷
-* **==hira.pdf==**にひらがなを書きまくる
+* `<lec_h2o>/dataset/sheet`内の**hira.pdf**をたくさん印刷
+* **hira.pdf**にひらがなを書きまくる
 
 ####2 スキャンと画像の前処理
 * 記入の終わったものをスキャンしまくる
@@ -10,7 +10,7 @@
 
 #####※シンプルスキャンの設定
 こう！
-![scan_param](./.README_IMAGE/scan_param.png)
+![scan_param](./.README_IMAGE/scan_param.jpeg)
 
 
 ####3 分割のプログラムの実行
