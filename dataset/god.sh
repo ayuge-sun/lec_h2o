@@ -28,3 +28,11 @@ rename "s/\.pgm/_$file_name\.pgm/;" ./out/$file_name/*.pgm
 cp -rf ./out/$file_name/* ./out_train/
 
 echo "神の切り取りが終了したぜぃ!!"
+
+echo "これより、神は、H2Oのデータを創造される..."
+
+./csv_writer
+
+echo "神のデータセットを創造したぜぃ!!"
+echo ""
+echo "神。まじで神。"
