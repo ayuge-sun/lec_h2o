@@ -24,7 +24,7 @@ main (int argc, char *argv[])
   vector<int> data;
   int number = 0;
   int x = 0, y = 0, size = 0;
-  const char* path= "./out/pgm";
+  const char* path= "./out_train/";
   DIR *dp;       // ディレクトリへのポインタ
   dirent* entry; // readdir() で返されるエントリーポイント
   int label;
