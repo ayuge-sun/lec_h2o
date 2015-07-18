@@ -44,5 +44,5 @@ perl glyphsplit.pl scan/<image>.png code/_hira3.txt <x ofset> <y_ofset>
 ###※3,4の作業を行うスクリプトの実行
 ```bash
 cd <lec_h2o>/dataset
-bash god.sh [ファイル名.png] [x_ofset`] [y_ofset]
+bash god.sh <file name.png> <x_ofset> <y_ofset> <do ./csv_writer or not (0 or 1)>
 ```
