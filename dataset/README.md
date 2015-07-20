@@ -9,7 +9,8 @@
 * 処理済みのスキャン画像を`<lec_h2o>/dataset/scan`に移動
 
 #####※シンプルスキャンの設定
-こう！
+  
+こう！  
 ![scan_param](./.README_IMAGE/scan_param.jpeg)
 
 

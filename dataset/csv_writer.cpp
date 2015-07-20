@@ -24,14 +24,36 @@ main (int argc, char *argv[])
   vector<int> data;
   int number = 0;
   int x = 0, y = 0, size = 0;
-  const char* path= "./out_train/";
+  const char* path;;
   DIR *dp;       // ディレクトリへのポインタ
   dirent* entry; // readdir() で返されるエントリーポイント
   int label;
   stringstream file_init;
+  string mode;
   
+  if(argc != 2){
+	cout << "引数の数が違うお" << endl;
+	return 0;
+  }
+  cout << argv[1] << endl;
+  mode = argv[1];
+  cout << mode << endl;
   //ファイルの読み込み
-  file.open("train_data/test.csv", ios::out);
+  if(mode == "train"){
+	cout << "make train data!!" << endl;
+	file.open("train_data/train.csv", ios::out);
+	path= "./out_train/";
+  }
+  else if(mode == "test"){
+	cout << "make test data!!" << endl;
+	file.open("test_data/test.csv",ios::out);
+	path= "./out_test/";
+  }
+  else{
+	cout << "no match!" << endl;
+	return 0; 
+  }
+
   if(! file.is_open()) {
 	return  EXIT_FAILURE;
   }
@@ -83,12 +105,6 @@ main (int argc, char *argv[])
 
 		}	
 	}
-
-	// cout << "data size : " << data.size() << endl;
-	// //write csv file
-	// for (int i = 0; i < data.size()-1; i++){
-	//   file << data[i] << ",";
-	// } //file << data[data.size()-1] << endl;
 
 	//clear
 	data.clear();
