@@ -29,7 +29,6 @@ if [ -e ./scan/$1 ] ; then # check picture.png exists or not
     rename "s/\.pgm/_$file_name\.pgm/;" ./out/$file_name/*.pgm
     cp -rf ./out/$file_name/* ./out_train/
 
-<<<<<<< Updated upstream
     echo ""
     echo "神の切り取りが終了したぜぃ!!"
 
@@ -50,7 +49,4 @@ else
     echo ./scan/$1 なんてファイルは無いヨ!!
     echo ファイル名を確認して再チャレンジしてね。
 fi
-=======
-echo "神の切り取りが終了したぜぃ!!"
-echo "神。まじで神。"
->>>>>>> Stashed changes
+
