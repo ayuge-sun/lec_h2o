@@ -27,4 +27,5 @@
 *.jpg
 *.png
 *.fdb_latexmk
+*~
 documents/graduate_thesis.synctex.gz
